@@ -1,0 +1,38 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 170px 170px;
+  grid-gap: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 2px solid rgba(246, 246, 246, 0.25);
+  border-radius: 0.5rem;
+  color: var(--white);
+  width: 100%;
+  max-width: 570px;
+  transition: all 333ms;
+  &:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    h6 {
+      color: var(--red);
+    }
+  }
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 222ms;
+}
+
+.card__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: all 222ms;
+  strong {
+    color: var(--red);
+  }
+}

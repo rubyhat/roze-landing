@@ -1,0 +1,135 @@
+@import "~swiper/css";
+
+.wrapper {
+  .screen-fourth {
+    padding-bottom: 12rem;
+  }
+}
+
+.exp-cards {
+  display: flex;
+  align-items: center;
+}
+
+.exp-card {
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  color: var(--white);
+  transition: all 333ms;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: var(--gray);
+    color: var(--dark);
+    svg {
+      fill: var(--red);
+    }
+    .bed-icon {
+      stroke: var(--red);
+      fill: transparent;
+    }
+  }
+}
+
+.exp-card__title {
+  font-size: 1.5rem;
+  // line-height: 2rem;
+  letter-spacing: 5%;
+}
+
+.exp-card__subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+  strong {
+    font-weight: 700;
+  }
+}
+
+.exp-card__list {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exp-card__list-item {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.25rem;
+    fill: var(--white);
+  }
+  .bed-icon {
+    stroke: var(--white);
+    fill: transparent;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  max-width: 338px;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: all 777ms;
+  }
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  img {
+    transform: scale(0.85);
+  }
+}
+
+.swiper-pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-right: 0.25rem;
+  opacity: 0.6;
+  transition: all 666ms;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  opacity: 1;
+}
+
+.exp-info {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 2rem;
+  a {
+    color: var(--red);
+    font-weight: 700;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
