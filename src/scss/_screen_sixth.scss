@@ -2,10 +2,17 @@
   display: flex;
   justify-content: center;
   color: var(--dark);
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .contacts__info {
   margin-right: 12rem;
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .contacts__title {
@@ -39,6 +46,9 @@
   flex-direction: column;
   width: 100%;
   max-width: 270px;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
 }
 
 .contacts__input {

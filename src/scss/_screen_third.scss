@@ -3,6 +3,11 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 170px 170px;
   grid-gap: 2rem;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr;
+  }
 }
 
 .card {
@@ -19,6 +24,9 @@
     h6 {
       color: var(--red);
     }
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 }
 

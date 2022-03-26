@@ -3,12 +3,21 @@
 .wrapper {
   .screen-fourth {
     padding-bottom: 12rem;
+    @media (max-width: 576px) {
+      padding: 2rem 0 2rem 1rem;
+    }
   }
 }
 
 .exp-cards {
   display: flex;
   align-items: center;
+  animation-duration: 2s;
+  @media (max-width: 1250px) {
+    max-width: 100%;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+  }
 }
 
 .exp-card {
@@ -30,6 +39,11 @@
       stroke: var(--red);
       fill: transparent;
     }
+  }
+  @media (max-width: 576px) {
+    max-width: 340px;
+    margin-right: 10px;
+    border: 1px solid var(--gray);
   }
 }
 
@@ -65,6 +79,9 @@
   .bed-icon {
     stroke: var(--white);
     fill: transparent;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px;
   }
 }
 

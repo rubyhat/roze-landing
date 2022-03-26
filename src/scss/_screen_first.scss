@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   padding-top: 2rem;
+  animation-duration: 2s;
 }
 
 .header__logo {
@@ -45,6 +46,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    // flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .tags {
@@ -83,6 +90,11 @@
   font-weight: 300;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+  @media (max-width: 576px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .form-hero {
@@ -106,6 +118,10 @@
     margin: 1rem 0;
     font-size: 0.85rem;
     font-weight: 300;
+  }
+  @media (max-width: 576px) {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
 
@@ -166,4 +182,11 @@
 
 .icons__link {
   padding: 0.25rem;
+}
+
+.hero__arrow-down {
+  animation-duration: 3.5s;
+  @media (max-width: 890px) {
+    display: none;
+  }
 }

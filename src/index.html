@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <title>Roze</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,49 +15,92 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <meta name="format-detection" content="telephone=no" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/keen-slider@6.6.4/keen-slider.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+	      <text y=%22.9em%22 font-size=%2290%22>
+					🏡
+	      </text>
+	    </svg>"
     />
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__content">
+        <img
+          src="./images/logo_small.svg"
+          alt="logo"
+          class="animated wow fadeIn"
+        />
+        <p class="preloader__text animated wow fadeIn" data-wow-delay="0.5s">
+          Агентство Недвижимости <br />
+          <strong class="animated wow fadeIn">Артура Розе</strong>
+        </p>
+      </div>
+    </div>
     <main class="wrapper">
       <section class="screen screen-first">
         <div class="container">
-          <header class="header">
+          <header class="header animated wow fadeIn">
             <img
               src="./images/logo_small.svg"
               alt="logo"
               class="header__logo"
             />
             <nav class="navigation">
-              <a href="#" class="navigation__link">О нас</a>
-              <a href="#" class="navigation__link">Продукты</a>
-              <a href="#" class="navigation__link">Контакты</a>
+              <a href="#" data-section="screen-second" class="navigation__link"
+                >О нас</a
+              >
+              <a href="#" data-section="screen-fifth" class="navigation__link"
+                >Продукты</a
+              >
+              <a href="#" data-section="screen-sixth" class="navigation__link"
+                >Контакты</a
+              >
             </nav>
           </header>
           <div class="hero">
             <div class="hero__info">
               <ul class="tags">
-                <li class="tags__item">Эксклюзив</li>
-                <li class="tags__item">Сервис</li>
-                <li class="tags__item">Качество</li>
+                <li
+                  class="tags__item animated wow fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  Эксклюзив
+                </li>
+                <li
+                  class="tags__item animated wow fadeIn"
+                  data-wow-delay="0.6s"
+                >
+                  Сервис
+                </li>
+                <li
+                  class="tags__item animated wow fadeIn"
+                  data-wow-delay="0.9s"
+                >
+                  Качество
+                </li>
               </ul>
-              <h1 class="hero__title">
+              <h1 class="hero__title animated wow fadeIn" data-wow-delay="1.2s">
                 Агентство недвижимости <br />
                 <span>Артура Розе</span>
               </h1>
-              <p class="hero__text">
+              <p class="hero__text animated wow fadeIn" data-wow-delay="1.5s">
                 Мы делаем объявления такими, чтобы люди останавливались <br />
                 на них и представляли там свою жизнь.
               </p>
               <img
                 src="./images/icons/icon_arrow_down.svg"
                 alt="icon_arrow_down"
-                class="hero__arrow-down"
+                class="hero__arrow-down animated infinite flash"
               />
             </div>
-            <form class="form-hero">
+            <form class="form-hero animated wow fadeIn" data-wow-delay="1.2s">
               <h6 class="form-hero__title">Бесплатная консультация</h6>
               <input
                 placeholder="Ваше имя"
@@ -74,12 +121,18 @@
                   /></a>
                 </li>
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://api.whatsapp.com/send?phone=77752813783&text=Здаравствуйте, мне необходим специалист по недвижимости."
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/whatsapp.svg" alt="social_icon"
                   /></a>
                 </li>
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://instagram.com/artur.realtor.krg"
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/instagram.svg" alt="social_icon"
                   /></a>
                 </li>
@@ -90,7 +143,7 @@
       </section>
       <section class="screen screen_dark screen-second">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header animated wow fadeIn">
             <h2 class="section-header__title">
               Основатель агентства недвижимости
             </h2>
@@ -100,7 +153,7 @@
             </p>
           </div>
           <div class="about">
-            <div class="about__info">
+            <div class="about__info animated wow fadeIn" data-wow-delay="0.3s">
               <div class="about__title-wrap">
                 <h6 class="about__title">Артур Розе</h6>
               </div>
@@ -120,7 +173,7 @@
                 операции с недвижимостью :)
               </p>
             </div>
-            <div class="about__video">
+            <div class="about__video animated wow fadeIn" data-wow-delay="0.9s">
               <iframe
                 width="660"
                 height="415"
@@ -136,9 +189,11 @@
       </section>
       <section class="screen screen_dark screen-third">
         <div class="container">
-          <h4 class="sub-header">Уникальность наших услуг</h4>
+          <h4 class="sub-header animated wow fadeIn">
+            Уникальность наших услуг
+          </h4>
           <div class="cards">
-            <div class="card">
+            <div class="card animated wow fadeIn" data-wow-delay="0s">
               <h6 class="card__title">Фото / Видео</h6>
               <p class="card__text">
                 После <strong>нашей</strong> фото и видео сьемки, покупатели
@@ -146,7 +201,7 @@
                 объявления 😊
               </p>
             </div>
-            <div class="card">
+            <div class="card animated wow fadeIn" data-wow-delay="0.3s">
               <h6 class="card__title">Реклама</h6>
               <p class="card__text">
                 Агентство недвижимости «Розе» оплачивает самую
@@ -154,14 +209,14 @@
                 <strong>за свой счёт!</strong>
               </p>
             </div>
-            <div class="card">
+            <div class="card animated wow fadeIn" data-wow-delay="0.6s">
               <h6 class="card__title">Опыт</h6>
               <p class="card__text">
                 <strong>Знание и опыт</strong> позволяют реализовывать
                 недвижимость максимально комфортно!
               </p>
             </div>
-            <div class="card">
+            <div class="card animated wow fadeIn" data-wow-delay="0.9s">
               <h6 class="card__title">Знания</h6>
               <p class="card__text">
                 Понимание <strong>банковской структуры</strong> позволит не
@@ -174,14 +229,14 @@
       </section>
       <section class="screen screen_dark screen-fourth">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header animated wow fadeIn">
             <h2 class="section-header__title">Наш опыт</h2>
             <p class="section-header__subtitle">
               Мы успешно реализовали более 100 объектов недвижимости,<br />
               нам есть что вам показать
             </p>
           </div>
-          <div class="exp-cards">
+          <div class="exp-cards animated wow fadeInRight">
             <div class="exp-card">
               <h4 class="exp-card__title">Квартира Абдирова 24/4</h4>
               <p class="exp-card__subtitle">
@@ -361,15 +416,18 @@
               </div>
             </div>
           </div>
-          <p class="exp-info">
-            Еще больше информации о наших объектах в <a href="#">Instagram</a>
+          <p class="exp-info animated wow fadeIn">
+            Еще больше информации о наших объектах в
+            <a href="https://instagram.com/artur.realtor.krg" target="_blank"
+              >Instagram</a
+            >
           </p>
         </div>
       </section>
       <section class="screen screen_white screen-fifth">
         <div class="container">
           <div class="form-fifth_wrapper">
-            <form class="form-fifth">
+            <form class="form-fifth animated wow fadeInUp">
               <h4 class="form-fifth__title">Бесплатная консультация</h4>
               <p class="form-fifth__subtitle">Давайте обсудим детали</p>
               <div class="form-fifth__inputs">
@@ -392,26 +450,32 @@
                   /></a>
                 </li>
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://api.whatsapp.com/send?phone=77752813783&text=Здаравствуйте, мне необходим специалист по недвижимости."
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/whatsapp.svg" alt="social_icon"
                   /></a>
                 </li>
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://instagram.com/artur.realtor.krg"
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/instagram.svg" alt="social_icon"
                   /></a>
                 </li>
               </ul>
             </form>
           </div>
-          <div class="section-header section-header_black">
+          <div class="section-header section-header_black animated wow fadeIn">
             <h2 class="section-header__title">Наши продукты</h2>
             <p class="section-header__subtitle">
               Мы помогаем продать и купить жилые и коммерческие<br />
               объекты недвижимости.
             </p>
           </div>
-          <div class="attention">
+          <div class="attention animated wow bounce">
             <strong class="attention__symbol">//</strong>
             <div class="attention__text-group">
               <h6 class="attention__title">Важно!</h6>
@@ -427,7 +491,7 @@
               Найти жильё / Оформить ипотеку
             </li>
           </ul>
-          <div class="tab-content">
+          <div class="tab-content animated wow fadeInUp">
             <div
               data-tab="content"
               class="tab-content__item tab-content__item_active"
@@ -470,8 +534,15 @@
                   </li>
                 </ul>
                 <div class="tab-content__buttons">
-                  <a href="#" class="tab-content__button">Позвонить мне</a>
-                  <a href="#" class="tab-content__button">Написать мне</a>
+                  <a href="tel:77752813783" class="tab-content__button"
+                    >Позвонить мне</a
+                  >
+                  <a
+                    href="https://api.whatsapp.com/send?phone=77752813783&text=Здаравствуйте, мне необходим специалист по недвижимости."
+                    target="_blank"
+                    class="tab-content__button"
+                    >Написать мне</a
+                  >
                 </div>
               </div>
               <div class="tab-content__image-wrap">
@@ -523,8 +594,15 @@
                   </li>
                 </ul>
                 <div class="tab-content__buttons">
-                  <a href="#" class="tab-content__button">Позвонить мне</a>
-                  <a href="#" class="tab-content__button">Написать мне</a>
+                  <a href="tel:77752813783" class="tab-content__button"
+                    >Позвонить мне</a
+                  >
+                  <a
+                    href="https://api.whatsapp.com/send?phone=77752813783&text=Здаравствуйте, мне необходим специалист по недвижимости."
+                    target="_blank"
+                    class="tab-content__button"
+                    >Написать мне</a
+                  >
                 </div>
               </div>
               <div class="tab-content__image-wrap">
@@ -536,7 +614,7 @@
       </section>
       <section class="screen screen_white screen-sixth">
         <div class="container">
-          <div class="section-header section-header_black">
+          <div class="section-header section-header_black animated wow fadeIn">
             <h2 class="section-header__title">Контактная информация</h2>
             <p class="section-header__subtitle">
               Свяжитесь с нами или оставьте свои<br />
@@ -544,20 +622,32 @@
             </p>
           </div>
           <div class="contancts">
-            <div class="contacts__info">
+            <div class="contacts__info animated wow fadeInLeft">
               <h6 class="contacts__title">Артур Розе</h6>
-              <a href="#" class="contacts__link">+7 775 281 3783</a>
+              <a href="tel:77752813783" class="contacts__link"
+                >+7 775 281 3783</a
+              >
               <p class="contacts__text">
                 Казахстан, город Караганда,<br />
                 улица Нуркена Абдирова 5, офис 401
               </p>
               <div class="contacts__links">
-                <a class="contacts__link" href="#">Instagram</a>
-                <a class="contacts__link" href="#">WhatsApp</a>
+                <a
+                  class="contacts__link"
+                  href="https://instagram.com/artur.realtor.krg"
+                  target="_blank"
+                  >Instagram</a
+                >
+                <a
+                  class="contacts__link"
+                  href="https://api.whatsapp.com/send?phone=77752813783&text=Здаравствуйте, мне необходим специалист по недвижимости."
+                  target="_blank"
+                  >WhatsApp</a
+                >
                 <a class="contacts__link" href="#">Telegram</a>
               </div>
             </div>
-            <form class="contacts__form">
+            <form class="contacts__form animated wow fadeInRight">
               <h6 class="contacts__title">Форма</h6>
               <input
                 placeholder="Ваше имя"
@@ -574,8 +664,48 @@
           </div>
         </div>
       </section>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.531 4.95863H11.969V15.0318C11.969 15.0318 12.4419 15.0311 13.1195 15.0304C14.3211 15.0295 16.1668 15.0285 17.1627 15.0318C18.7203 15.0368 22.4717 14.8555 22.4726 9.9952C22.4736 4.69812 17.531 4.95863 17.531 4.95863Z"
+                fill="black"
+              />
+              <path
+                d="M16 0C7.16349 0 0 7.16348 0 16.0001C0 24.8365 7.16349 32 16 32C24.8366 32 32 24.8365 32 16.0001C32 7.16348 24.8366 0 16 0ZM17.4002 16.6634C16.2575 16.6607 13.8177 16.6673 12.0243 16.6634V28.6738H9.89841L9.90656 28.0571L7.45439 28.0895V27.2666H8.44187L8.43362 26.6906H7.45439V26.2627H8.42538L8.43362 25.6702H7.45439V25.2423H8.42538L8.43362 24.6004H7.45439V23.8599L9.89841 23.8845V16.6634H9.89553V3.32631H17.396C17.396 3.32631 24.5456 3.61166 24.5456 9.99486C24.5456 15.2968 19.5726 16.6686 17.4002 16.6634Z"
+                fill="black"
+              />
+            </svg>
+            <div class="footer__text">
+              <strong>Агентство Недвижимости Артура Розе</strong>
+              <strong>© 2020-2022 | Все права защищены</strong>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.4/keen-slider.min.js"></script>
+    <script>
+      // function scrollTo(element, to, duration) {
+      //   const element = document.querySelector(to);
+      //   const offSetTop = element.offSetTop;
+      //   if (duration <= 0) return;
+      //   var difference = offSetTop - element.scrollTop;
+      //   var perTick = (difference / duration) * 10;
+
+      //   setTimeout(function () {
+      //     element.scrollTop = element.scrollTop + perTick;
+      //     if (element.scrollTop === offSetTop) return;
+      //     scrollTo(element, offSetTop, duration - 10);
+      //   }, 10);
+      // }
+    </script>
+    <script src="js/wow.min.js"></script>
   </body>
 </html>
