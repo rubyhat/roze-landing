@@ -1,3 +1,12 @@
+.screen-second {
+  .form-fifth_wrapper {
+    background-color: var(--dark);
+    box-shadow: 0 0 20px var(--red);
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -31,12 +40,21 @@
 }
 
 .about__info {
+  margin-right: 2rem;
   @media (max-width: 1250px) {
     width: 100%;
+    margin-right: 0;
   }
 }
 
 .about__video {
+  .sub-header {
+    max-width: 600px;
+  }
+  iframe {
+    box-shadow: 0 0 20px var(--red);
+  }
+
   @media (max-width: 1250px) {
     width: 100%;
     iframe {
@@ -53,5 +71,13 @@
     iframe {
       height: 300px;
     }
+  }
+}
+
+.form-wrapper-second {
+  width: 100%;
+  padding-top: 2rem;
+  form {
+    margin: 0 auto;
   }
 }
