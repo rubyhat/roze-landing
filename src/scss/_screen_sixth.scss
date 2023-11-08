@@ -46,8 +46,26 @@
   flex-direction: column;
   width: 100%;
   max-width: 270px;
+  select {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 2px solid var(--gray);
+    background-color: var(--white);
+    padding: 6px 12px;
+    border-radius: 0.25rem;
+    color: var(--dark);
+    * {
+      background-color: var(--white);
+    }
+    &:focus {
+      border-color: var(--red);
+    }
+  }
   @media (max-width: 576px) {
     max-width: 100%;
+    select {
+      max-width: 100%;
+    }
   }
 }
 

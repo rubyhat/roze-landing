@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <meta name="format-detection" content="telephone=no" />
@@ -40,7 +40,6 @@
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"
             width="760.55351"
-            height="493.87026"
             viewBox="0 0 760.55351 493.87026"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
@@ -185,7 +184,7 @@
           class="animated wow fadeIn"
         />
         <p class="preloader__text animated wow fadeIn" data-wow-delay="0.5s">
-          Агентство Недвижимости <br />
+          Агентство Недвижимости&nbsp;<br />
           <strong class="animated wow fadeIn">«Розе»</strong>
         </p>
       </div>
@@ -234,12 +233,12 @@
                 </li>
               </ul>
               <h1 class="hero__title animated wow fadeIn" data-wow-delay="1.2s">
-                Агентство недвижимости <br />
+                Агентство недвижимости&nbsp;<br />
                 <span>«Розе»</span>
               </h1>
               <p class="hero__text animated wow fadeIn" data-wow-delay="1.5s">
-                Мы делаем объявления такими, чтобы люди останавливались <br />
-                на них и представляли там свою жизнь.
+                Продажа недвижимости под ключ!&nbsp;<br />Самая дорогая и
+                эффективная реклама за наш счёт!
               </p>
               <img
                 src="./images/icons/icon_arrow_down.svg"
@@ -253,17 +252,21 @@
       </section>
       <section class="screen screen_dark screen-second">
         <div class="container">
-          <div class="section-header animated wow fadeIn">
+          <div class="section-header animated wow fadeIn d-none">
             <h2 class="section-header__title">
               Основатель агентства недвижимости
             </h2>
             <p class="section-header__subtitle">
-              Опытный специалист в сфере услуг по реализации <br />
+              Опытный специалист в сфере услуг по реализации&nbsp;<br />
               объектов недвижимости
             </p>
           </div>
+
           <div class="about">
-            <div class="about__info animated wow fadeIn" data-wow-delay="0.3s">
+            <div
+              class="about__info animated wow fadeIn d-none"
+              data-wow-delay="0.3s"
+            >
               <div class="about__title-wrap">
                 <h6 class="about__title">Артур Розе</h6>
               </div>
@@ -283,12 +286,23 @@
                 операции с недвижимостью :)
               </p>
             </div>
+            <div class="section-header animated wow fadeIn">
+              <h2 class="section-header__title">Условия сотрудничества?</h2>
+              <h2 class="section-header__title">Что мы предлагаем?</h2>
+              <h2 class="section-header__title">Какой размер комиссии?</h2>
+              <h2 class="section-header__title">Узнаете в этом видео!</h2>
+            </div>
             <div class="about__video animated wow fadeIn" data-wow-delay="0.9s">
-              <div>
+              <div class="sub-header-wrap">
                 <h4 class="sub-header">
                   Видео-презентация услуги риэлторов Агентства недвижимости
                   «Розе»
                 </h4>
+                <img
+                  src="./images/icons/arrow-icon.png"
+                  alt="arrow"
+                  class="sub-header-image"
+                />
               </div>
               <iframe
                 width="660"
@@ -301,13 +315,14 @@
               ></iframe>
             </div>
           </div>
+
           <div class="form-fifth_wrapper">
             <form
               action="telegram.php"
               method="POST"
               class="form form-fifth animated wow fadeInUp"
             >
-              <h4 class="form-fifth__title">Бесплатная консультация</h4>
+              <h4 class="form-fifth__title">Оставить заявку</h4>
               <p class="form-fifth__subtitle">Давайте обсудим детали</p>
               <div class="form-fifth__inputs">
                 <input
@@ -315,18 +330,32 @@
                   placeholder="Ваше имя"
                   type="text"
                   class="form-fifth__input"
+                  maxlength="50"
                 />
                 <input
+                  id="form1"
                   name="first-form__phone"
                   placeholder="Ваш телефон"
                   type="tel"
-                  class="form-fifth__input"
+                  class="form-fifth__input input-phone"
+                  maxlength="12"
                 />
+                <select name="first-form__option" class="form-select">
+                  <option value="Продать Недвижимость">
+                    Продать Недвижимость
+                  </option>
+                  <option value="Купить Недвижимость">
+                    Купить Недвижимость
+                  </option>
+                </select>
                 <button class="form-fifth__button">Отправить</button>
               </div>
               <ul class="icons">
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://t.me/rozeartur"
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/telegram.svg" alt="social_icon"
                   /></a>
                 </li>
@@ -356,22 +385,26 @@
               class="form form-hero animated wow fadeIn"
               data-wow-delay="1.2s"
             >
-              <h6 class="form-hero__title">Бесплатная консультация</h6>
+              <h6 class="form-hero__title">Оставить заявку</h6>
               <input
                 placeholder="Ваше имя"
                 type="text"
                 class="form-hero__input"
+                maxlength="50"
               />
               <input
                 placeholder="Ваш телефон"
                 type="tel"
-                class="form-hero__input"
+                class="form-hero__input input-phone"
               />
               <button type="submit" class="form-hero__button">Отправить</button>
               <p>или</p>
               <ul class="icons">
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://t.me/rozeartur"
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/telegram.svg" alt="social_icon"
                   /></a>
                 </li>
@@ -441,7 +474,7 @@
           <div class="section-header animated wow fadeIn">
             <h2 class="section-header__title">Наш опыт</h2>
             <p class="section-header__subtitle">
-              Мы успешно реализовали более 70 объектов недвижимости,<br />
+              Мы успешно реализовали более 70 объектов недвижимости,&nbsp;<br />
               нам есть что вам показать
             </p>
           </div>
@@ -649,18 +682,32 @@
                   placeholder="Ваше имя"
                   type="text"
                   class="form-fifth__input"
+                  maxlength="50"
                 />
                 <input
+                  id="form2"
                   name="second-form__phone"
                   placeholder="Ваш телефон"
                   type="tel"
-                  class="form-fifth__input"
+                  class="form-fifth__input input-phone"
+                  maxlength="12"
                 />
+                <select name="second-form__option" class="form-select">
+                  <option value="Продать Недвижимость">
+                    Продать Недвижимость
+                  </option>
+                  <option value="Купить Недвижимость">
+                    Купить Недвижимость
+                  </option>
+                </select>
                 <button class="form-fifth__button">Отправить</button>
               </div>
               <ul class="icons">
                 <li class="icons__item">
-                  <a href="#" class="icons__link"
+                  <a
+                    href="https://t.me/rozeartur"
+                    target="_blank"
+                    class="icons__link"
                     ><img src="./images/icons/telegram.svg" alt="social_icon"
                   /></a>
                 </li>
@@ -686,7 +733,7 @@
           <div class="section-header section-header_black animated wow fadeIn">
             <h2 class="section-header__title">Наши продукты</h2>
             <p class="section-header__subtitle">
-              Мы помогаем продать и купить жилые и коммерческие <br />
+              Мы помогаем продать и купить жилые и коммерческие&nbsp;<br />
               объекты недвижимости.
             </p>
           </div>
@@ -749,7 +796,7 @@
                   </li>
                 </ul>
                 <div class="tab-content__buttons">
-                  <a href="tel:77752813783" class="tab-content__button"
+                  <a href="tel:87752813783" class="tab-content__button"
                     >Позвонить мне</a
                   >
                   <a
@@ -799,13 +846,13 @@
                   >
                     <strong>06</strong>
                     <p style="margin-top: -2px">
-                      Сопровождение сделки под ключ,<br />
+                      Сопровождение сделки под ключ,&nbsp;<br />
                       до возникновения права собственности
                     </p>
                   </li>
                 </ul>
                 <div class="tab-content__buttons">
-                  <a href="tel:77752813783" class="tab-content__button"
+                  <a href="tel:87752813783" class="tab-content__button"
                     >Позвонить мне</a
                   >
                   <a
@@ -828,18 +875,18 @@
           <div class="section-header section-header_black animated wow fadeIn">
             <h2 class="section-header__title">Контактная информация</h2>
             <p class="section-header__subtitle">
-              Свяжитесь с нами или оставьте свои<br />
+              Свяжитесь с нами или оставьте свои&nbsp;<br />
               данные для связи
             </p>
           </div>
           <div class="contancts">
             <div class="contacts__info animated wow fadeInLeft">
               <h6 class="contacts__title">Артур Розе</h6>
-              <a href="tel:77752813783" class="contacts__link"
+              <a href="tel:87752813783" class="contacts__link"
                 >+7 775 281 3783</a
               >
               <p class="contacts__text">
-                Казахстан, город Караганда,<br />
+                Казахстан, город Караганда,&nbsp;<br />
                 улица Нуркена Абдирова 5, офис 401
               </p>
               <div class="contacts__links">
@@ -855,7 +902,12 @@
                   target="_blank"
                   >WhatsApp</a
                 >
-                <a class="contacts__link" href="#">Telegram</a>
+                <a
+                  class="contacts__link"
+                  href="https://t.me/rozeartur"
+                  target="_blank"
+                  >Telegram</a
+                >
               </div>
             </div>
             <form
@@ -869,13 +921,22 @@
                 placeholder="Ваше имя"
                 type="text"
                 class="contacts__input"
+                maxlength="50"
               />
               <input
+                id="form3"
                 name="third-form__phone"
                 placeholder="Ваш телефон"
                 type="tel"
-                class="contacts__input"
+                class="contacts__input input-phone"
+                maxlength="12"
               />
+              <select name="third-form__option" class="form-select">
+                <option value="Продать Недвижимость">
+                  Продать Недвижимость
+                </option>
+                <option value="Купить Недвижимость">Купить Недвижимость</option>
+              </select>
               <button class="contacts__button" type="submit">Отправить</button>
             </form>
           </div>

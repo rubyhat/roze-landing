@@ -5,6 +5,13 @@
     margin-top: 3rem;
     margin-bottom: 0;
   }
+  .section-header__title:before {
+    top: -4px;
+    height: 35px;
+  }
+  .section-header {
+    padding-bottom: 1rem;
+  }
 }
 
 .about {
@@ -48,8 +55,29 @@
 }
 
 .about__video {
+  .sub-header-wrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
   .sub-header {
     max-width: 600px;
+
+    @media (max-width: 576px) {
+      font-weight: 300;
+      font-size: 1rem;
+      color: var(--gray);
+    }
+  }
+  .sub-header-image {
+    display: none;
+    max-width: 48px;
+    transform: rotate(115deg);
+    @media (max-width: 576px) {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+    }
   }
   iframe {
     box-shadow: 0 0 20px var(--red);

@@ -7,11 +7,9 @@ $(document).ready(function () {
   modalButton.addEventListener("click", () => {
     formModal.classList.add("d-none");
   });
-
   $(".form").submit(function () {
     let data = $(this).serialize();
     isMobile ? (data += "&device=Phone") : (data += "&device=Computer");
-    console.log($(this).serialize());
     console.log(data);
     $.ajax({
       type: "POST",

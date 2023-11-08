@@ -1,6 +1,7 @@
 import "../scss/index.scss";
 import swiperSlider from "./slider";
 import smoothscroll from "smoothscroll-polyfill";
+// import IMask from "imask";
 
 // kick off the polyfill!
 smoothscroll.polyfill();
@@ -77,4 +78,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
   smoothScroll();
+
+  // const addMasks = () => {
+  //   const phoneInput1 = document.querySelector("#form1");
+  //   const phoneInput2 = document.querySelector("#form2");
+  //   const phoneInput3 = document.querySelector("#form3");
+  //   const maskOptions = {
+  //     mask: "+{7} 000 000 00 00",
+  //   };
+
+  //   const mask1 = IMask(phoneInput1, maskOptions);
+  //   const mask2 = IMask(phoneInput2, maskOptions);
+  //   const mask3 = IMask(phoneInput3, maskOptions);
+  // };
+
+  // addMasks();
 });
