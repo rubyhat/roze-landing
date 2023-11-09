@@ -109,3 +109,33 @@
     margin: 0 auto;
   }
 }
+
+.about__links-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__link-item {
+  border: 2px solid rgba(246, 246, 246, 0.25);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.about__links-button {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.about__links_title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.about__links_text {
+  color: #fff;
+}
